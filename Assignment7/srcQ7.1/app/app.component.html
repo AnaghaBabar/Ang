@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<form class="example-form">
+  <h2>Login</h2>
+  <mat-form-field class="example-full-width">
+    <input #UserName matInput placeholder="UserName">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+      <input #Password matInput placeholder="Password">
+  </mat-form-field>
+  <button type = "button" mat-stroked-button (click)="login(UserName,Password)">Submit</button>
+</form>

@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<form class="example-form">
+  <h2>Car Details</h2>
+  
+  <mat-form-field class="example-full-width">
+    <input #CarName matInput placeholder="Car name">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+      <input #CarType matInput placeholder="Car type">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input #Color matInput placeholder="Car color">
+</mat-form-field>
+
+<mat-form-field class="example-full-width">
+  <input  required #ColorNo matInput placeholder="Car number">
+</mat-form-field>
+
+<mat-form-field class="example-full-width">
+  <input #NoofSeats matInput placeholder="No of seats">
+</mat-form-field>
+  <button type = "button" mat-stroked-button (click)="SubmitDetails()">Submit</button>
+</form>

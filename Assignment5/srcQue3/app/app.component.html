@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Template Driven Form
+  </h1>
+
+<form>
+  <div class="form-group">
+  <label for="username">Username</label>
+  <input required 
+          ngModel 
+          name="USERNAME" 
+          #name="ngModel" 
+          id="username" 
+          (change)="LogChange(name)" 
+          type="text" 
+          class="form-control">
+    <div class="alert alert-danger" *ngIf="!name.valid">Name is Compulssory.</div>
+</div>
+
+<div class="form-group">
+    <label>Password</label>
+    <input id = "password" class="form-control">
+</div>
+
+<div>
+  <button class="btn btn-primary">Submit</button>
+</div>
+</form>
+</div>
+

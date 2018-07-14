@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<form class="example-form">
+  <h2>Traveling Portal</h2>
+  <mat-form-field class="example-full-width">
+    <mat-select placeholder="Select City" >
+      <mat-option *ngFor="let city of cities" [value]="city.name">
+        {{city.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Start date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker2" placeholder="End date">
+    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+    <mat-datepicker #picker2></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input #UserName matInput placeholder="UserName">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+      <input #mobileno matInput placeholder="Mobile Number">
+  </mat-form-field>
+  <button type = "button" mat-stroked-button (click)="SubmitDetails(UserName,mobileno)">Submit</button>
+</form>

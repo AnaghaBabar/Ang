@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Intercomponent Communication Between Parent and Child
+  </h1>
+
+  <app-child [parent]="msg" (obj)="message=$event"></app-child>
+  <h2>{{message}}</h2>
+
+</div>
+
+
+
